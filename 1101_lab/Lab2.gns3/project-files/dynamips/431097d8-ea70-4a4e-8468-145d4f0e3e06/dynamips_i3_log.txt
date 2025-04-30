@@ -1,0 +1,73 @@
+Apr 30 15:24:36.671 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 30 15:24:36.671 HYPERVISOR: Started on IP = localhost, TCP port = 50575.
+Apr 30 15:24:37.174 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 30 15:24:37.174 HYPERVISOR: exec_cmd: hypervisor working_dir E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips 
+Apr 30 15:24:37.174 GENERAL: working_dir=E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips
+Apr 30 15:24:37.174 HYPERVISOR: exec_cmd: hypervisor working_dir E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips\6fd2f784-a75d-4414-94c1-55740468bfb6 
+Apr 30 15:24:37.175 GENERAL: working_dir=E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips\6fd2f784-a75d-4414-94c1-55740468bfb6
+Apr 30 15:24:37.176 HYPERVISOR: exec_cmd: vm create R3 3 c3600 
+Apr 30 15:24:37.176 VM: VM R3 created.
+Apr 30 15:24:37.177 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Apr 30 15:24:37.177 HYPERVISOR: exec_cmd: c3600 get_mac_addr R3 
+Apr 30 15:24:37.177 HYPERVISOR: exec_cmd: vm set_ios R3 E:/Versity/1st Semester/Mcs 1101/LAB/c3640-a3js-mz.124-25d.image 
+Apr 30 15:24:37.177 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:24:37.179 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x6050b114 
+Apr 30 15:24:37.179 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Apr 30 15:24:37.180 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Apr 30 15:24:37.180 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Apr 30 15:24:37.180 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:24:37.180 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 NM-1FE-TX 
+Apr 30 15:24:37.181 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:24:37.181 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1E 
+Apr 30 15:24:37.181 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:24:37.181 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-1E 
+Apr 30 15:24:37.181 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:24:37.181 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 NM-4E 
+Apr 30 15:24:58.106 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:24:58.106 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 1 0 
+Apr 30 15:24:58.108 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:24:58.108 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Apr 30 15:26:27.143 HYPERVISOR: exec_cmd: nio create_udp udp-c3b7d389-b17c-42cf-8431-08e3e3bc9913 10012 127.0.0.1 10013 
+Apr 30 15:26:27.398 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-c3b7d389-b17c-42cf-8431-08e3e3bc9913 
+Apr 30 15:26:27.399 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:26:32.409 HYPERVISOR: exec_cmd: nio create_udp udp-a7fbc0b4-e788-49dc-ac33-0005d4c54bc6 10018 127.0.0.1 10019 
+Apr 30 15:26:32.411 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-a7fbc0b4-e788-49dc-ac33-0005d4c54bc6 
+Apr 30 15:26:32.412 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:29:52.390 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Apr 30 15:29:52.391 VM: VM Ghost created.
+Apr 30 15:29:52.392 HYPERVISOR: exec_cmd: vm set_ios Ghost E:/Versity/1st Semester/Mcs 1101/LAB/c3640-a3js-mz.124-25d.image 
+Apr 30 15:29:52.392 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 30 15:29:52.392 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips\c3640-a3js-mz.124-25d.image-192.ghost 
+Apr 30 15:29:52.393 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Apr 30 15:29:52.393 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 30 15:29:52.411 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Apr 30 15:29:52.411 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 30 15:29:52.736 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 30 15:29:52.737 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 30 15:29:52.864 VM: VM Ghost shutdown.
+Apr 30 15:29:52.865 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Apr 30 15:29:52.866 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 30 15:29:52.866 VM: VM Ghost destroyed.
+Apr 30 15:29:52.879 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Apr 30 15:29:52.879 HYPERVISOR: exec_cmd: vm set_ghost_file R3 E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips\c3640-a3js-mz.124-25d.image-192.ghost 
+Apr 30 15:29:52.880 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:29:52.885 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Apr 30 15:29:52.886 HYPERVISOR: exec_cmd: vm start R3 
+Apr 30 15:30:23.194 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 30 15:44:06.868 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:44:06.869 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 1 0 
+Apr 30 15:44:06.880 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 1 0 
+Apr 30 15:44:06.882 HYPERVISOR: exec_cmd: nio delete udp-c3b7d389-b17c-42cf-8431-08e3e3bc9913 
+Apr 30 15:44:06.915 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:44:06.915 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 0 0 
+Apr 30 15:44:06.941 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Apr 30 15:44:06.943 HYPERVISOR: exec_cmd: nio delete udp-a7fbc0b4-e788-49dc-ac33-0005d4c54bc6 
+Apr 30 15:44:07.134 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 30 15:44:07.134 HYPERVISOR: exec_cmd: vm stop R3 
+Apr 30 15:44:07.215 VM: VM R3 shutdown.
+Apr 30 15:44:07.216 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 30 15:44:07.218 HYPERVISOR: exec_cmd: vm delete R3 
+Apr 30 15:44:07.218 VM: VM R3 destroyed.
+Apr 30 15:44:07.225 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 30 15:44:07.509 HYPERVISOR: Stopped.
+Apr 30 15:44:07.509 GENERAL: reset done.

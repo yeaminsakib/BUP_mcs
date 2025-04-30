@@ -1,0 +1,58 @@
+Apr 30 15:24:34.261 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 30 15:24:34.261 HYPERVISOR: Started on IP = localhost, TCP port = 50569.
+Apr 30 15:24:34.761 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 30 15:24:34.761 HYPERVISOR: exec_cmd: hypervisor working_dir E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips 
+Apr 30 15:24:34.761 GENERAL: working_dir=E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips
+Apr 30 15:24:34.761 HYPERVISOR: exec_cmd: hypervisor working_dir E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips\299cc4d9-10a6-4a4b-a371-fdd625b4ec5a 
+Apr 30 15:24:34.762 GENERAL: working_dir=E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips\299cc4d9-10a6-4a4b-a371-fdd625b4ec5a
+Apr 30 15:24:34.763 HYPERVISOR: exec_cmd: vm create R2 2 c3600 
+Apr 30 15:24:34.764 VM: VM R2 created.
+Apr 30 15:24:34.764 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Apr 30 15:24:34.764 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+Apr 30 15:24:34.765 HYPERVISOR: exec_cmd: vm set_ios R2 E:/Versity/1st Semester/Mcs 1101/LAB/c3640-a3js-mz.124-25d.image 
+Apr 30 15:24:34.765 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:24:34.765 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6050b114 
+Apr 30 15:24:34.765 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Apr 30 15:24:34.766 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Apr 30 15:24:34.766 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Apr 30 15:24:34.767 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:24:34.767 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 NM-1FE-TX 
+Apr 30 15:24:34.767 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:24:34.767 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1E 
+Apr 30 15:24:34.768 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:24:34.768 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-1E 
+Apr 30 15:24:34.768 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:24:34.768 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 NM-4E 
+Apr 30 15:24:52.778 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:24:52.779 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 1 0 
+Apr 30 15:24:52.779 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:24:52.779 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Apr 30 15:26:18.836 HYPERVISOR: exec_cmd: nio create_udp udp-310dc563-357c-44ad-b1f3-3c6d8807b50a 10006 127.0.0.1 10007 
+Apr 30 15:26:19.083 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-310dc563-357c-44ad-b1f3-3c6d8807b50a 
+Apr 30 15:26:19.083 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:26:32.401 HYPERVISOR: exec_cmd: nio create_udp udp-d445960c-a75e-4002-be3d-631cf2b1b892 10016 127.0.0.1 10017 
+Apr 30 15:26:32.404 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-d445960c-a75e-4002-be3d-631cf2b1b892 
+Apr 30 15:26:32.404 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:29:52.880 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Apr 30 15:29:52.886 HYPERVISOR: exec_cmd: vm set_ghost_file R2 E:\Versity\1st Semester\Mcs 1101\LAB\Lab2\Lab2_practice.gns3\project-files\dynamips\c3640-a3js-mz.124-25d.image-192.ghost 
+Apr 30 15:29:52.886 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:29:52.893 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Apr 30 15:29:52.893 HYPERVISOR: exec_cmd: vm start R2 
+Apr 30 15:30:23.194 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 30 15:44:06.774 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:44:06.774 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 0 0 
+Apr 30 15:44:06.787 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+Apr 30 15:44:06.788 HYPERVISOR: exec_cmd: nio delete udp-310dc563-357c-44ad-b1f3-3c6d8807b50a 
+Apr 30 15:44:06.905 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:44:06.905 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 1 0 
+Apr 30 15:44:06.911 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 1 0 
+Apr 30 15:44:06.912 HYPERVISOR: exec_cmd: nio delete udp-d445960c-a75e-4002-be3d-631cf2b1b892 
+Apr 30 15:44:07.035 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 30 15:44:07.035 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 30 15:44:07.116 VM: VM R2 shutdown.
+Apr 30 15:44:07.117 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 30 15:44:07.119 HYPERVISOR: exec_cmd: vm delete R2 
+Apr 30 15:44:07.119 VM: VM R2 destroyed.
+Apr 30 15:44:07.119 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 30 15:44:07.399 HYPERVISOR: Stopped.
+Apr 30 15:44:07.399 GENERAL: reset done.
